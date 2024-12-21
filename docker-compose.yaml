@@ -19,7 +19,7 @@ services:
       - "5000:5000"
     secrets:
       - db_password
-    command: flask --app flask_app run --host=0.0.0.0
+    command: flask --app app run --host=0.0.0.0
     depends_on:
       postgres:
         condition: service_healthy
